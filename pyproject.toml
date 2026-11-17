@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentforge-toolkit"
+version = "1.0.0"
+description = "A local-first ecosystem of 100 agent skills and MCP tools across ten domains"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "AgentForge Contributors"}]
+dependencies = ["mcp>=1.9,<2.0"]
+
+[project.scripts]
+agentforge = "agentforge.cli:main"
+agentforge-mcp = "agentforge.mcp_server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.package-data]
+agentforge = ["data/*.json"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

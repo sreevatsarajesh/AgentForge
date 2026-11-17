@@ -1,0 +1,3 @@
+[console_scripts]
+agentforge = agentforge.cli:main
+agentforge-mcp = agentforge.mcp_server:main

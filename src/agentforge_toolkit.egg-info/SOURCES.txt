@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/agentforge/__init__.py
+src/agentforge/cli.py
+src/agentforge/engine.py
+src/agentforge/mcp_server.py
+src/agentforge/registry.py
+src/agentforge/data/categories.json
+src/agentforge/data/plugins.json
+src/agentforge_toolkit.egg-info/PKG-INFO
+src/agentforge_toolkit.egg-info/SOURCES.txt
+src/agentforge_toolkit.egg-info/dependency_links.txt
+src/agentforge_toolkit.egg-info/entry_points.txt
+src/agentforge_toolkit.egg-info/requires.txt
+src/agentforge_toolkit.egg-info/top_level.txt
+tests/test_agentforge.py

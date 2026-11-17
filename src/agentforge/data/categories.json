@@ -1,0 +1,122 @@
+{
+  "productivity": [
+    "productivity_meeting_agenda",
+    "productivity_meeting_minutes",
+    "productivity_action_items",
+    "productivity_task_prioritizer",
+    "productivity_weekly_planner",
+    "productivity_personal_budget",
+    "productivity_compound_interest",
+    "productivity_loan_calculator",
+    "productivity_expense_categorizer",
+    "productivity_meal_planner"
+  ],
+  "writing": [
+    "writing_blog_outline",
+    "writing_article_brief",
+    "writing_social_post",
+    "writing_press_release",
+    "writing_faq_generator",
+    "writing_plain_language",
+    "writing_proofreading",
+    "writing_resume_bullets",
+    "writing_cover_letter",
+    "writing_speech_outline"
+  ],
+  "learning": [
+    "learning_concept_explainer",
+    "learning_flashcard_generator",
+    "learning_quiz_generator",
+    "learning_study_plan",
+    "learning_lesson_plan",
+    "learning_rubric_builder",
+    "learning_glossary_builder",
+    "learning_reading_guide",
+    "learning_practice_questions",
+    "learning_spaced_repetition"
+  ],
+  "data": [
+    "data_csv_profiler",
+    "data_csv_filter",
+    "data_csv_aggregate",
+    "data_csv_to_json",
+    "data_json_validator",
+    "data_json_to_csv",
+    "data_deduplicate_rows",
+    "data_normalize_headers",
+    "data_text_to_csv",
+    "data_statistics_summary"
+  ],
+  "business": [
+    "business_swot_analysis",
+    "business_competitor_matrix",
+    "business_customer_persona",
+    "business_value_proposition",
+    "business_business_model_canvas",
+    "business_pricing_calculator",
+    "business_break_even_calculator",
+    "business_budget_builder",
+    "business_kpi_tree",
+    "business_risk_register"
+  ],
+  "coding": [
+    "coding_code_explainer",
+    "coding_python_ast_summary",
+    "coding_regex_tester",
+    "coding_dependency_inventory",
+    "coding_changelog_generator",
+    "coding_commit_message",
+    "coding_test_case_designer",
+    "coding_api_spec_drafter",
+    "coding_sql_query_helper",
+    "coding_config_validator"
+  ],
+  "research": [
+    "research_research_brief",
+    "research_evidence_matrix",
+    "research_claim_evidence_review",
+    "research_literature_synthesis",
+    "research_citation_formatter",
+    "research_interview_guide",
+    "research_survey_builder",
+    "research_qualitative_coder",
+    "research_source_comparison",
+    "research_research_questions"
+  ],
+  "career": [
+    "career_resume_review",
+    "career_job_match",
+    "career_interview_practice",
+    "career_star_story_builder",
+    "career_networking_message",
+    "career_salary_negotiation",
+    "career_career_roadmap",
+    "career_skill_gap_analysis",
+    "career_portfolio_project",
+    "career_performance_review"
+  ],
+  "creative": [
+    "creative_naming_studio",
+    "creative_slogan_generator",
+    "creative_brand_brief",
+    "creative_design_brief",
+    "creative_storyboard",
+    "creative_video_script",
+    "creative_podcast_outline",
+    "creative_presentation_outline",
+    "creative_infographic_plan",
+    "creative_image_prompt"
+  ],
+  "operations": [
+    "operations_sop_builder",
+    "operations_process_map",
+    "operations_raci_matrix",
+    "operations_project_charter",
+    "operations_milestone_planner",
+    "operations_retrospective",
+    "operations_incident_report",
+    "operations_change_request",
+    "operations_event_plan",
+    "operations_procurement_checklist"
+  ]
+}

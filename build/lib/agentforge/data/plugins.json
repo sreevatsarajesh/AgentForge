@@ -1,0 +1,819 @@
+{
+  "name": "AgentForge",
+  "version": "1.0.0",
+  "tool_count": 100,
+  "categories": [
+    "productivity",
+    "writing",
+    "learning",
+    "data",
+    "business",
+    "coding",
+    "research",
+    "career",
+    "creative",
+    "operations"
+  ],
+  "tools": [
+    {
+      "name": "meeting_agenda",
+      "tool_name": "productivity_meeting_agenda",
+      "title": "Meeting Agenda Builder",
+      "category": "productivity",
+      "description": "Create a focused meeting agenda with objectives, timed topics, preparation and decisions.",
+      "skill_path": "skills/productivity/meeting-agenda/SKILL.md"
+    },
+    {
+      "name": "meeting_minutes",
+      "tool_name": "productivity_meeting_minutes",
+      "title": "Meeting Minutes Formatter",
+      "category": "productivity",
+      "description": "Turn supplied notes into decisions, discussion points, owners and follow-ups.",
+      "skill_path": "skills/productivity/meeting-minutes/SKILL.md"
+    },
+    {
+      "name": "action_items",
+      "tool_name": "productivity_action_items",
+      "title": "Action Item Extractor",
+      "category": "productivity",
+      "description": "Extract tasks, owners, deadlines and unresolved questions from supplied text.",
+      "skill_path": "skills/productivity/action-items/SKILL.md"
+    },
+    {
+      "name": "task_prioritizer",
+      "tool_name": "productivity_task_prioritizer",
+      "title": "Task Prioritizer",
+      "category": "productivity",
+      "description": "Rank tasks using urgency, impact, effort and dependencies.",
+      "skill_path": "skills/productivity/task-prioritizer/SKILL.md"
+    },
+    {
+      "name": "weekly_planner",
+      "tool_name": "productivity_weekly_planner",
+      "title": "Weekly Planner",
+      "category": "productivity",
+      "description": "Turn goals and available hours into a realistic weekly schedule.",
+      "skill_path": "skills/productivity/weekly-planner/SKILL.md"
+    },
+    {
+      "name": "personal_budget",
+      "tool_name": "productivity_personal_budget",
+      "title": "Personal Budget Planner",
+      "category": "productivity",
+      "description": "Organize income, expenses, savings targets and cash-flow assumptions.",
+      "skill_path": "skills/productivity/personal-budget/SKILL.md"
+    },
+    {
+      "name": "compound_interest",
+      "tool_name": "productivity_compound_interest",
+      "title": "Compound Interest Calculator",
+      "category": "productivity",
+      "description": "Calculate future value from principal, rate, compounding and duration.",
+      "skill_path": "skills/productivity/compound-interest/SKILL.md"
+    },
+    {
+      "name": "loan_calculator",
+      "tool_name": "productivity_loan_calculator",
+      "title": "Loan Repayment Calculator",
+      "category": "productivity",
+      "description": "Estimate installment, total interest and repayment schedule.",
+      "skill_path": "skills/productivity/loan-calculator/SKILL.md"
+    },
+    {
+      "name": "expense_categorizer",
+      "tool_name": "productivity_expense_categorizer",
+      "title": "Expense Categorizer",
+      "category": "productivity",
+      "description": "Categorize supplied expense descriptions using transparent keyword rules.",
+      "skill_path": "skills/productivity/expense-categorizer/SKILL.md"
+    },
+    {
+      "name": "meal_planner",
+      "tool_name": "productivity_meal_planner",
+      "title": "Meal Planning Assistant",
+      "category": "productivity",
+      "description": "Create a flexible meal plan from preferences, budget and available ingredients.",
+      "skill_path": "skills/productivity/meal-planner/SKILL.md"
+    },
+    {
+      "name": "blog_outline",
+      "tool_name": "writing_blog_outline",
+      "title": "Blog Outline Builder",
+      "category": "writing",
+      "description": "Create a structured article outline with audience, angle and section goals.",
+      "skill_path": "skills/writing/blog-outline/SKILL.md"
+    },
+    {
+      "name": "article_brief",
+      "tool_name": "writing_article_brief",
+      "title": "Article Brief Builder",
+      "category": "writing",
+      "description": "Prepare a writer brief with thesis, audience, evidence needs and structure.",
+      "skill_path": "skills/writing/article-brief/SKILL.md"
+    },
+    {
+      "name": "social_post",
+      "tool_name": "writing_social_post",
+      "title": "Social Post Creator",
+      "category": "writing",
+      "description": "Draft platform-aware social content from a supplied message.",
+      "skill_path": "skills/writing/social-post/SKILL.md"
+    },
+    {
+      "name": "press_release",
+      "tool_name": "writing_press_release",
+      "title": "Press Release Builder",
+      "category": "writing",
+      "description": "Structure a factual press release with headline, lead, details and boilerplate.",
+      "skill_path": "skills/writing/press-release/SKILL.md"
+    },
+    {
+      "name": "faq_generator",
+      "tool_name": "writing_faq_generator",
+      "title": "FAQ Generator",
+      "category": "writing",
+      "description": "Turn supplied product or policy information into clear question-and-answer pairs.",
+      "skill_path": "skills/writing/faq-generator/SKILL.md"
+    },
+    {
+      "name": "plain_language",
+      "tool_name": "writing_plain_language",
+      "title": "Plain Language Rewriter",
+      "category": "writing",
+      "description": "Simplify dense text while preserving important qualifications.",
+      "skill_path": "skills/writing/plain-language/SKILL.md"
+    },
+    {
+      "name": "proofreading",
+      "tool_name": "writing_proofreading",
+      "title": "Proofreading Assistant",
+      "category": "writing",
+      "description": "Identify grammar, spelling, clarity and consistency issues in supplied text.",
+      "skill_path": "skills/writing/proofreading/SKILL.md"
+    },
+    {
+      "name": "resume_bullets",
+      "tool_name": "writing_resume_bullets",
+      "title": "Resume Bullet Builder",
+      "category": "writing",
+      "description": "Convert work or project descriptions into achievement-focused resume bullets.",
+      "skill_path": "skills/writing/resume-bullets/SKILL.md"
+    },
+    {
+      "name": "cover_letter",
+      "tool_name": "writing_cover_letter",
+      "title": "Cover Letter Planner",
+      "category": "writing",
+      "description": "Create a tailored cover letter draft from a role and candidate evidence.",
+      "skill_path": "skills/writing/cover-letter/SKILL.md"
+    },
+    {
+      "name": "speech_outline",
+      "tool_name": "writing_speech_outline",
+      "title": "Speech Outline Builder",
+      "category": "writing",
+      "description": "Build a speech structure with opening, key points, transitions and close.",
+      "skill_path": "skills/writing/speech-outline/SKILL.md"
+    },
+    {
+      "name": "concept_explainer",
+      "tool_name": "learning_concept_explainer",
+      "title": "Concept Explainer",
+      "category": "learning",
+      "description": "Explain a topic at a selected level with examples and misconceptions.",
+      "skill_path": "skills/learning/concept-explainer/SKILL.md"
+    },
+    {
+      "name": "flashcard_generator",
+      "tool_name": "learning_flashcard_generator",
+      "title": "Flashcard Generator",
+      "category": "learning",
+      "description": "Create concise question-and-answer flashcards from supplied learning material.",
+      "skill_path": "skills/learning/flashcard-generator/SKILL.md"
+    },
+    {
+      "name": "quiz_generator",
+      "tool_name": "learning_quiz_generator",
+      "title": "Quiz Generator",
+      "category": "learning",
+      "description": "Generate a quiz with answer key and explanations from supplied material.",
+      "skill_path": "skills/learning/quiz-generator/SKILL.md"
+    },
+    {
+      "name": "study_plan",
+      "tool_name": "learning_study_plan",
+      "title": "Study Plan Builder",
+      "category": "learning",
+      "description": "Build a study schedule from topics, available time and target date.",
+      "skill_path": "skills/learning/study-plan/SKILL.md"
+    },
+    {
+      "name": "lesson_plan",
+      "tool_name": "learning_lesson_plan",
+      "title": "Lesson Plan Builder",
+      "category": "learning",
+      "description": "Create learning objectives, activities, materials and assessment.",
+      "skill_path": "skills/learning/lesson-plan/SKILL.md"
+    },
+    {
+      "name": "rubric_builder",
+      "tool_name": "learning_rubric_builder",
+      "title": "Assessment Rubric Builder",
+      "category": "learning",
+      "description": "Create criteria and performance levels for an assessment.",
+      "skill_path": "skills/learning/rubric-builder/SKILL.md"
+    },
+    {
+      "name": "glossary_builder",
+      "tool_name": "learning_glossary_builder",
+      "title": "Glossary Builder",
+      "category": "learning",
+      "description": "Extract or define key terms in a supplied subject area.",
+      "skill_path": "skills/learning/glossary-builder/SKILL.md"
+    },
+    {
+      "name": "reading_guide",
+      "tool_name": "learning_reading_guide",
+      "title": "Reading Guide",
+      "category": "learning",
+      "description": "Create guiding questions, vocabulary and reflection prompts for a text.",
+      "skill_path": "skills/learning/reading-guide/SKILL.md"
+    },
+    {
+      "name": "practice_questions",
+      "tool_name": "learning_practice_questions",
+      "title": "Practice Question Builder",
+      "category": "learning",
+      "description": "Create varied practice questions with worked answer guidance.",
+      "skill_path": "skills/learning/practice-questions/SKILL.md"
+    },
+    {
+      "name": "spaced_repetition",
+      "tool_name": "learning_spaced_repetition",
+      "title": "Spaced Repetition Planner",
+      "category": "learning",
+      "description": "Schedule review sessions using an adjustable recall-based interval plan.",
+      "skill_path": "skills/learning/spaced-repetition/SKILL.md"
+    },
+    {
+      "name": "csv_profiler",
+      "tool_name": "data_csv_profiler",
+      "title": "CSV Profiler",
+      "category": "data",
+      "description": "Summarize columns, types, missing values and sample records from CSV text.",
+      "skill_path": "skills/data/csv-profiler/SKILL.md"
+    },
+    {
+      "name": "csv_filter",
+      "tool_name": "data_csv_filter",
+      "title": "CSV Filter",
+      "category": "data",
+      "description": "Filter CSV rows by an exact column value.",
+      "skill_path": "skills/data/csv-filter/SKILL.md"
+    },
+    {
+      "name": "csv_aggregate",
+      "tool_name": "data_csv_aggregate",
+      "title": "CSV Aggregator",
+      "category": "data",
+      "description": "Group CSV rows and calculate count, sum or average for a numeric column.",
+      "skill_path": "skills/data/csv-aggregate/SKILL.md"
+    },
+    {
+      "name": "csv_to_json",
+      "tool_name": "data_csv_to_json",
+      "title": "CSV to JSON Converter",
+      "category": "data",
+      "description": "Convert supplied CSV text into JSON records.",
+      "skill_path": "skills/data/csv-to-json/SKILL.md"
+    },
+    {
+      "name": "json_validator",
+      "tool_name": "data_json_validator",
+      "title": "JSON Validator",
+      "category": "data",
+      "description": "Parse JSON and report validity, structure and top-level keys.",
+      "skill_path": "skills/data/json-validator/SKILL.md"
+    },
+    {
+      "name": "json_to_csv",
+      "tool_name": "data_json_to_csv",
+      "title": "JSON to CSV Converter",
+      "category": "data",
+      "description": "Convert a JSON array of objects into CSV text.",
+      "skill_path": "skills/data/json-to-csv/SKILL.md"
+    },
+    {
+      "name": "deduplicate_rows",
+      "tool_name": "data_deduplicate_rows",
+      "title": "CSV Deduplicator",
+      "category": "data",
+      "description": "Remove duplicate CSV rows and report counts.",
+      "skill_path": "skills/data/deduplicate-rows/SKILL.md"
+    },
+    {
+      "name": "normalize_headers",
+      "tool_name": "data_normalize_headers",
+      "title": "CSV Header Normalizer",
+      "category": "data",
+      "description": "Normalize CSV headers to lowercase snake_case.",
+      "skill_path": "skills/data/normalize-headers/SKILL.md"
+    },
+    {
+      "name": "text_to_csv",
+      "tool_name": "data_text_to_csv",
+      "title": "Text to CSV Formatter",
+      "category": "data",
+      "description": "Format supplied delimited or line-based records as CSV.",
+      "skill_path": "skills/data/text-to-csv/SKILL.md"
+    },
+    {
+      "name": "statistics_summary",
+      "tool_name": "data_statistics_summary",
+      "title": "Statistics Summary",
+      "category": "data",
+      "description": "Calculate descriptive statistics for a supplied numeric list.",
+      "skill_path": "skills/data/statistics-summary/SKILL.md"
+    },
+    {
+      "name": "swot_analysis",
+      "tool_name": "business_swot_analysis",
+      "title": "SWOT Analysis",
+      "category": "business",
+      "description": "Build a clearly separated strengths, weaknesses, opportunities and threats analysis.",
+      "skill_path": "skills/business/swot-analysis/SKILL.md"
+    },
+    {
+      "name": "competitor_matrix",
+      "tool_name": "business_competitor_matrix",
+      "title": "Competitor Comparison Matrix",
+      "category": "business",
+      "description": "Compare supplied competitors against consistent dimensions.",
+      "skill_path": "skills/business/competitor-matrix/SKILL.md"
+    },
+    {
+      "name": "customer_persona",
+      "tool_name": "business_customer_persona",
+      "title": "Customer Persona Builder",
+      "category": "business",
+      "description": "Create an evidence-labelled customer persona from supplied research.",
+      "skill_path": "skills/business/customer-persona/SKILL.md"
+    },
+    {
+      "name": "value_proposition",
+      "tool_name": "business_value_proposition",
+      "title": "Value Proposition Designer",
+      "category": "business",
+      "description": "Clarify audience, problem, outcome and differentiator.",
+      "skill_path": "skills/business/value-proposition/SKILL.md"
+    },
+    {
+      "name": "business_model_canvas",
+      "tool_name": "business_business_model_canvas",
+      "title": "Business Model Canvas",
+      "category": "business",
+      "description": "Draft the nine building blocks of a business model.",
+      "skill_path": "skills/business/business-model-canvas/SKILL.md"
+    },
+    {
+      "name": "pricing_calculator",
+      "tool_name": "business_pricing_calculator",
+      "title": "Pricing Calculator",
+      "category": "business",
+      "description": "Calculate unit economics, markup, margin and suggested price from inputs.",
+      "skill_path": "skills/business/pricing-calculator/SKILL.md"
+    },
+    {
+      "name": "break_even_calculator",
+      "tool_name": "business_break_even_calculator",
+      "title": "Break-even Calculator",
+      "category": "business",
+      "description": "Calculate break-even units and revenue from fixed costs and contribution margin.",
+      "skill_path": "skills/business/break-even-calculator/SKILL.md"
+    },
+    {
+      "name": "budget_builder",
+      "tool_name": "business_budget_builder",
+      "title": "Budget Builder",
+      "category": "business",
+      "description": "Organize income, costs, assumptions and variance tracking.",
+      "skill_path": "skills/business/budget-builder/SKILL.md"
+    },
+    {
+      "name": "kpi_tree",
+      "tool_name": "business_kpi_tree",
+      "title": "KPI Tree Builder",
+      "category": "business",
+      "description": "Translate a business objective into drivers and measurable indicators.",
+      "skill_path": "skills/business/kpi-tree/SKILL.md"
+    },
+    {
+      "name": "risk_register",
+      "tool_name": "business_risk_register",
+      "title": "Risk Register Builder",
+      "category": "business",
+      "description": "Create a risk register with likelihood, impact, mitigation and owner.",
+      "skill_path": "skills/business/risk-register/SKILL.md"
+    },
+    {
+      "name": "code_explainer",
+      "tool_name": "coding_code_explainer",
+      "title": "Code Explainer",
+      "category": "coding",
+      "description": "Explain supplied source code, its flow, assumptions and edge cases.",
+      "skill_path": "skills/coding/code-explainer/SKILL.md"
+    },
+    {
+      "name": "python_ast_summary",
+      "tool_name": "coding_python_ast_summary",
+      "title": "Python AST Summarizer",
+      "category": "coding",
+      "description": "Parse Python source and list imports, functions, classes and syntax errors.",
+      "skill_path": "skills/coding/python-ast-summary/SKILL.md"
+    },
+    {
+      "name": "regex_tester",
+      "tool_name": "coding_regex_tester",
+      "title": "Regex Tester",
+      "category": "coding",
+      "description": "Test a regular expression against supplied sample text.",
+      "skill_path": "skills/coding/regex-tester/SKILL.md"
+    },
+    {
+      "name": "dependency_inventory",
+      "tool_name": "coding_dependency_inventory",
+      "title": "Dependency Inventory",
+      "category": "coding",
+      "description": "Extract likely imports and dependencies from supplied source text.",
+      "skill_path": "skills/coding/dependency-inventory/SKILL.md"
+    },
+    {
+      "name": "changelog_generator",
+      "tool_name": "coding_changelog_generator",
+      "title": "Changelog Generator",
+      "category": "coding",
+      "description": "Turn supplied commits or changes into categorized release notes.",
+      "skill_path": "skills/coding/changelog-generator/SKILL.md"
+    },
+    {
+      "name": "commit_message",
+      "tool_name": "coding_commit_message",
+      "title": "Commit Message Builder",
+      "category": "coding",
+      "description": "Create concise conventional commit message suggestions from a change summary.",
+      "skill_path": "skills/coding/commit-message/SKILL.md"
+    },
+    {
+      "name": "test_case_designer",
+      "tool_name": "coding_test_case_designer",
+      "title": "Test Case Designer",
+      "category": "coding",
+      "description": "Design positive, negative, boundary and regression test cases.",
+      "skill_path": "skills/coding/test-case-designer/SKILL.md"
+    },
+    {
+      "name": "api_spec_drafter",
+      "tool_name": "coding_api_spec_drafter",
+      "title": "API Spec Drafter",
+      "category": "coding",
+      "description": "Draft endpoint contracts with methods, inputs, outputs and error cases.",
+      "skill_path": "skills/coding/api-spec-drafter/SKILL.md"
+    },
+    {
+      "name": "sql_query_helper",
+      "tool_name": "coding_sql_query_helper",
+      "title": "SQL Query Planner",
+      "category": "coding",
+      "description": "Translate a described data question into a parameterized SQL draft.",
+      "skill_path": "skills/coding/sql-query-helper/SKILL.md"
+    },
+    {
+      "name": "config_validator",
+      "tool_name": "coding_config_validator",
+      "title": "Configuration Validator",
+      "category": "coding",
+      "description": "Parse and validate JSON or TOML configuration and report structural issues.",
+      "skill_path": "skills/coding/config-validator/SKILL.md"
+    },
+    {
+      "name": "research_brief",
+      "tool_name": "research_research_brief",
+      "title": "Research Brief Builder",
+      "category": "research",
+      "description": "Define a research question, scope, method, evidence needs and deliverables.",
+      "skill_path": "skills/research/research-brief/SKILL.md"
+    },
+    {
+      "name": "evidence_matrix",
+      "tool_name": "research_evidence_matrix",
+      "title": "Evidence Matrix",
+      "category": "research",
+      "description": "Organize supplied sources or excerpts by claim, evidence, limitations and relevance.",
+      "skill_path": "skills/research/evidence-matrix/SKILL.md"
+    },
+    {
+      "name": "claim_evidence_review",
+      "tool_name": "research_claim_evidence_review",
+      "title": "Claim and Evidence Reviewer",
+      "category": "research",
+      "description": "Assess whether supplied evidence supports a claim without inventing external verification.",
+      "skill_path": "skills/research/claim-evidence-review/SKILL.md"
+    },
+    {
+      "name": "literature_synthesis",
+      "tool_name": "research_literature_synthesis",
+      "title": "Literature Synthesis",
+      "category": "research",
+      "description": "Synthesize supplied study summaries by themes, agreements and gaps.",
+      "skill_path": "skills/research/literature-synthesis/SKILL.md"
+    },
+    {
+      "name": "citation_formatter",
+      "tool_name": "research_citation_formatter",
+      "title": "Citation Formatter",
+      "category": "research",
+      "description": "Format bibliographic details into a selected citation style.",
+      "skill_path": "skills/research/citation-formatter/SKILL.md"
+    },
+    {
+      "name": "interview_guide",
+      "tool_name": "research_interview_guide",
+      "title": "Interview Guide Builder",
+      "category": "research",
+      "description": "Create neutral interview questions, probes and consent reminders.",
+      "skill_path": "skills/research/interview-guide/SKILL.md"
+    },
+    {
+      "name": "survey_builder",
+      "tool_name": "research_survey_builder",
+      "title": "Survey Builder",
+      "category": "research",
+      "description": "Create unbiased survey questions and response options for a defined objective.",
+      "skill_path": "skills/research/survey-builder/SKILL.md"
+    },
+    {
+      "name": "qualitative_coder",
+      "tool_name": "research_qualitative_coder",
+      "title": "Qualitative Coding Assistant",
+      "category": "research",
+      "description": "Suggest themes and codes for supplied qualitative excerpts.",
+      "skill_path": "skills/research/qualitative-coder/SKILL.md"
+    },
+    {
+      "name": "source_comparison",
+      "tool_name": "research_source_comparison",
+      "title": "Source Comparison",
+      "category": "research",
+      "description": "Compare supplied sources by method, evidence, scope and limitations.",
+      "skill_path": "skills/research/source-comparison/SKILL.md"
+    },
+    {
+      "name": "research_questions",
+      "tool_name": "research_research_questions",
+      "title": "Research Question Generator",
+      "category": "research",
+      "description": "Develop focused, feasible and researchable questions from a topic.",
+      "skill_path": "skills/research/research-questions/SKILL.md"
+    },
+    {
+      "name": "resume_review",
+      "tool_name": "career_resume_review",
+      "title": "Resume Review",
+      "category": "career",
+      "description": "Review supplied resume text for clarity, relevance, evidence and consistency.",
+      "skill_path": "skills/career/resume-review/SKILL.md"
+    },
+    {
+      "name": "job_match",
+      "tool_name": "career_job_match",
+      "title": "Job Description Matcher",
+      "category": "career",
+      "description": "Compare supplied experience against a job description and identify evidence gaps.",
+      "skill_path": "skills/career/job-match/SKILL.md"
+    },
+    {
+      "name": "interview_practice",
+      "tool_name": "career_interview_practice",
+      "title": "Interview Practice Builder",
+      "category": "career",
+      "description": "Generate role-specific interview questions and evaluation guidance.",
+      "skill_path": "skills/career/interview-practice/SKILL.md"
+    },
+    {
+      "name": "star_story_builder",
+      "tool_name": "career_star_story_builder",
+      "title": "STAR Story Builder",
+      "category": "career",
+      "description": "Structure an experience into situation, task, action and result.",
+      "skill_path": "skills/career/star-story-builder/SKILL.md"
+    },
+    {
+      "name": "networking_message",
+      "tool_name": "career_networking_message",
+      "title": "Networking Message Writer",
+      "category": "career",
+      "description": "Draft concise, respectful networking outreach for a specific context.",
+      "skill_path": "skills/career/networking-message/SKILL.md"
+    },
+    {
+      "name": "salary_negotiation",
+      "tool_name": "career_salary_negotiation",
+      "title": "Salary Negotiation Planner",
+      "category": "career",
+      "description": "Prepare a negotiation case, questions and respectful response scripts.",
+      "skill_path": "skills/career/salary-negotiation/SKILL.md"
+    },
+    {
+      "name": "career_roadmap",
+      "tool_name": "career_career_roadmap",
+      "title": "Career Roadmap Builder",
+      "category": "career",
+      "description": "Create staged career goals, skills, projects and checkpoints.",
+      "skill_path": "skills/career/career-roadmap/SKILL.md"
+    },
+    {
+      "name": "skill_gap_analysis",
+      "tool_name": "career_skill_gap_analysis",
+      "title": "Skill Gap Analyzer",
+      "category": "career",
+      "description": "Compare target-role skills with current evidence and prioritize learning.",
+      "skill_path": "skills/career/skill-gap-analysis/SKILL.md"
+    },
+    {
+      "name": "portfolio_project",
+      "tool_name": "career_portfolio_project",
+      "title": "Portfolio Project Planner",
+      "category": "career",
+      "description": "Design a portfolio project with scope, milestones and demonstrable outcomes.",
+      "skill_path": "skills/career/portfolio-project/SKILL.md"
+    },
+    {
+      "name": "performance_review",
+      "tool_name": "career_performance_review",
+      "title": "Performance Review Assistant",
+      "category": "career",
+      "description": "Organize accomplishments, impact, learning and next-period goals.",
+      "skill_path": "skills/career/performance-review/SKILL.md"
+    },
+    {
+      "name": "naming_studio",
+      "tool_name": "creative_naming_studio",
+      "title": "Naming Studio",
+      "category": "creative",
+      "description": "Generate naming directions with rationale and screening considerations.",
+      "skill_path": "skills/creative/naming-studio/SKILL.md"
+    },
+    {
+      "name": "slogan_generator",
+      "tool_name": "creative_slogan_generator",
+      "title": "Slogan Generator",
+      "category": "creative",
+      "description": "Create concise slogan options for a supplied brand or campaign.",
+      "skill_path": "skills/creative/slogan-generator/SKILL.md"
+    },
+    {
+      "name": "brand_brief",
+      "tool_name": "creative_brand_brief",
+      "title": "Brand Brief Builder",
+      "category": "creative",
+      "description": "Define brand audience, positioning, personality, voice and proof points.",
+      "skill_path": "skills/creative/brand-brief/SKILL.md"
+    },
+    {
+      "name": "design_brief",
+      "tool_name": "creative_design_brief",
+      "title": "Design Brief Builder",
+      "category": "creative",
+      "description": "Translate a design request into objectives, constraints and deliverables.",
+      "skill_path": "skills/creative/design-brief/SKILL.md"
+    },
+    {
+      "name": "storyboard",
+      "tool_name": "creative_storyboard",
+      "title": "Storyboard Planner",
+      "category": "creative",
+      "description": "Break a concept into scenes, shots, action and visual notes.",
+      "skill_path": "skills/creative/storyboard/SKILL.md"
+    },
+    {
+      "name": "video_script",
+      "tool_name": "creative_video_script",
+      "title": "Video Script Builder",
+      "category": "creative",
+      "description": "Create a timed video script with visuals, narration and calls to action.",
+      "skill_path": "skills/creative/video-script/SKILL.md"
+    },
+    {
+      "name": "podcast_outline",
+      "tool_name": "creative_podcast_outline",
+      "title": "Podcast Outline Builder",
+      "category": "creative",
+      "description": "Structure an episode with segments, questions and transitions.",
+      "skill_path": "skills/creative/podcast-outline/SKILL.md"
+    },
+    {
+      "name": "presentation_outline",
+      "tool_name": "creative_presentation_outline",
+      "title": "Presentation Planner",
+      "category": "creative",
+      "description": "Create a slide-by-slide narrative with key messages and evidence needs.",
+      "skill_path": "skills/creative/presentation-outline/SKILL.md"
+    },
+    {
+      "name": "infographic_plan",
+      "tool_name": "creative_infographic_plan",
+      "title": "Infographic Planner",
+      "category": "creative",
+      "description": "Plan a visual information hierarchy and data story.",
+      "skill_path": "skills/creative/infographic-plan/SKILL.md"
+    },
+    {
+      "name": "image_prompt",
+      "tool_name": "creative_image_prompt",
+      "title": "Image Prompt Builder",
+      "category": "creative",
+      "description": "Create a detailed image-generation prompt with composition and style controls.",
+      "skill_path": "skills/creative/image-prompt/SKILL.md"
+    },
+    {
+      "name": "sop_builder",
+      "tool_name": "operations_sop_builder",
+      "title": "SOP Builder",
+      "category": "operations",
+      "description": "Create a repeatable standard operating procedure with roles and controls.",
+      "skill_path": "skills/operations/sop-builder/SKILL.md"
+    },
+    {
+      "name": "process_map",
+      "tool_name": "operations_process_map",
+      "title": "Process Map Builder",
+      "category": "operations",
+      "description": "Represent a workflow as ordered steps, decisions, inputs and outputs.",
+      "skill_path": "skills/operations/process-map/SKILL.md"
+    },
+    {
+      "name": "raci_matrix",
+      "tool_name": "operations_raci_matrix",
+      "title": "RACI Matrix Builder",
+      "category": "operations",
+      "description": "Assign responsible, accountable, consulted and informed roles.",
+      "skill_path": "skills/operations/raci-matrix/SKILL.md"
+    },
+    {
+      "name": "project_charter",
+      "tool_name": "operations_project_charter",
+      "title": "Project Charter Builder",
+      "category": "operations",
+      "description": "Define project purpose, scope, stakeholders, outcomes and constraints.",
+      "skill_path": "skills/operations/project-charter/SKILL.md"
+    },
+    {
+      "name": "milestone_planner",
+      "tool_name": "operations_milestone_planner",
+      "title": "Milestone Planner",
+      "category": "operations",
+      "description": "Sequence milestones, dependencies, owners and acceptance criteria.",
+      "skill_path": "skills/operations/milestone-planner/SKILL.md"
+    },
+    {
+      "name": "retrospective",
+      "tool_name": "operations_retrospective",
+      "title": "Retrospective Facilitator",
+      "category": "operations",
+      "description": "Structure what went well, what did not, insights and experiments.",
+      "skill_path": "skills/operations/retrospective/SKILL.md"
+    },
+    {
+      "name": "incident_report",
+      "tool_name": "operations_incident_report",
+      "title": "Incident Report Builder",
+      "category": "operations",
+      "description": "Organize incident facts, impact, timeline, response and follow-up.",
+      "skill_path": "skills/operations/incident-report/SKILL.md"
+    },
+    {
+      "name": "change_request",
+      "tool_name": "operations_change_request",
+      "title": "Change Request Builder",
+      "category": "operations",
+      "description": "Document a proposed change, rationale, impact and approval path.",
+      "skill_path": "skills/operations/change-request/SKILL.md"
+    },
+    {
+      "name": "event_plan",
+      "tool_name": "operations_event_plan",
+      "title": "Event Planner",
+      "category": "operations",
+      "description": "Plan objectives, schedule, roles, logistics, communications and contingencies.",
+      "skill_path": "skills/operations/event-plan/SKILL.md"
+    },
+    {
+      "name": "procurement_checklist",
+      "tool_name": "operations_procurement_checklist",
+      "title": "Procurement Checklist",
+      "category": "operations",
+      "description": "Create requirements, vendor evaluation, due diligence and acceptance checks.",
+      "skill_path": "skills/operations/procurement-checklist/SKILL.md"
+    }
+  ]
+}
