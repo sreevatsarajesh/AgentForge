@@ -24,7 +24,7 @@ AgentForge is a local-first collection of 100 focused capabilities covering prod
 ## Install
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/agentforge.git
+git clone https://sreevatsarajesh/agentforge.git
 cd agentforge
 python -m venv .venv
 source .venv/bin/activate

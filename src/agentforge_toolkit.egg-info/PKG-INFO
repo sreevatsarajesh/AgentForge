@@ -76,7 +76,7 @@ agentforge list
 ## Run a local tool
 
 ```bash
-agentforge run personal_compound_interest --payload '{"principal":1000,"annual_rate":5,"years":3,"compounds_per_year":12}'
+agentforge run productivity_compound_interest --payload '{"principal":1000,"annual_rate":5,"years":3,"compounds_per_year":12}'
 ```
 
 ## Start the MCP server
