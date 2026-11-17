@@ -1,111 +1,217 @@
-# AgentForge 1.0
 
-**100 practical tools. 10 domains. One open ecosystem for AI agents and people.**
+# AgentForge
 
-AgentForge is a local-first collection of 100 focused capabilities covering productivity, writing, learning, data, business, coding, research, careers, creative work, operations and personal planning. It includes 100 Agent Skills, a central MCP server, a CLI, a searchable registry, tests and GitHub automation.
+**100 AI-powered tools. One open-source ecosystem.**
 
-## What is included
+AgentForge is an extensible AI plugin ecosystem designed to give AI agents, developers, researchers, students, professionals and businesses access to useful capabilities through Agent Skills, Model Context Protocol (MCP), CLI tools and APIs.
 
-- 100 documented Agent Skills under `skills/`
-- 100 registered MCP tools
-- Local deterministic utilities for CSV, JSON, Python AST, regex, statistics and financial arithmetic
-- Structured workflow scaffolds for generative tasks, ready for an attached AI agent to complete
-- Command-line interface and machine-readable registry
-- Automated tests and GitHub Actions
+## Features
 
-**Important:** AgentForge does not contain 100 trained AI models. Some capabilities are deterministic local tools; generative skills provide structured instructions and workflow scaffolds for the AI client connected to them. No paid API key is required for the local utilities.
+- 100 tools across 10 professional domains
+- MCP server integration
+- Agent Skills support
+- FastAPI-powered marketplace backend
+- React + Vite marketplace frontend
+- Searchable plugin catalogue
+- Category-based discovery
+- Tool execution interface
+- JSON input and structured outputs
+- Local-first architecture
+- Extensible plugin registry
+- Automated testing
 
-## Requirements
+## Plugin Categories
 
-- Python 3.11 or newer
-- An MCP-compatible client for MCP integration
-- Optional: an AI model/provider configured in that client for generative skill workflows
+| Category | Purpose |
+|---|---|
+| SecurityForge | Cybersecurity and security analysis |
+| CodeForge | Software development and code intelligence |
+| ResearchForge | Research and academic productivity |
+| AutoForge | Productivity and workflow automation |
+| DataForge | Data processing and analytics |
+| VisionForge | Computer vision and image analysis |
+| BusinessForge | Business intelligence and marketing |
+| ConnectForge | APIs and integrations |
 
-## Install
+## Project Structure
+
+```text
+AgentForge/
+├── backend/
+├── frontend/
+├── registry/
+├── plugins/
+├── packages/
+├── templates/
+├── docs/
+├── tests/
+├── src/
+├── skills/
+├── .github/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CHANGELOG.md
+└── .gitignore
+```
+
+## Technology Stack
+
+**Backend**
+- Python
+- FastAPI
+- Pydantic
+- MCP Python SDK
+
+**Frontend**
+- React
+- Vite
+- JavaScript
+
+**AI Integration**
+- Model Context Protocol
+- Agent Skills
+- Ollama-compatible local AI workflows
+
+**Testing and Development**
+- pytest
+- Git
+- GitHub Actions
+
+## Installation
+
+### 1. Clone the repository
 
 ```bash
-git clone https://sreevatsarajesh/agentforge.git
-cd agentforge
-python -m venv .venv
+git clone https://github.com/YOUR-USERNAME/AgentForge.git
+cd AgentForge
+```
+
+### 2. Set up the Python environment
+
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install --upgrade pip
 pip install -e .
 ```
 
-Windows PowerShell activation: `.venv\Scripts\Activate.ps1`.
-
-## List tools
+### 3. Run tests
 
 ```bash
-agentforge list
+pytest -v
 ```
 
-## Run a local tool
-
-```bash
-agentforge run productivity_compound_interest --payload '{"principal":1000,"annual_rate":5,"years":3,"compounds_per_year":12}'
-```
-
-## Start the MCP server
+### 4. Start the MCP server
 
 ```bash
 agentforge-mcp
 ```
 
-The server uses stdio transport. Configure your MCP-compatible client to launch `agentforge-mcp` from the installed environment. Example generic configuration:
+The MCP server uses standard input/output transport and should be launched by a compatible MCP client.
+
+## Marketplace Setup
+
+Open two terminal windows from the repository root.
+
+### Backend
+
+```bash
+pip install -r backend/requirements.txt
+uvicorn backend.app.main:app --reload --port 8000
+```
+
+Backend API:
+
+http://localhost:8000
+
+Interactive API documentation:
+
+http://localhost:8000/docs
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Marketplace:
+
+http://localhost:5173
+
+## MCP Client Configuration
+
+Example configuration for an MCP-compatible client:
 
 ```json
 {
   "mcpServers": {
     "agentforge": {
-      "command": "/absolute/path/to/.venv/bin/agentforge-mcp",
+      "command": "/ABSOLUTE/PATH/TO/AgentForge/.venv/bin/agentforge-mcp",
       "args": []
     }
   }
 }
 ```
 
-Use the actual executable path for your machine. Client configuration formats vary.
+Replace the executable path with your actual local path.
 
-## Browse the skills
+## Creating Plugins
 
-Each skill lives at `skills/<domain>/<tool-name>/SKILL.md`. Skills use YAML frontmatter and a consistent workflow. Copy or install the relevant skill according to the conventions of your AI client. The MCP server exposes namespaced tools such as `productivity_action_items` and `data_csv_profiler`.
+AgentForge uses a modular plugin architecture.
 
-## Domains
+Each plugin should include:
 
-| Domain | Tools |
-|---|---:|
-| Productivity and personal planning | 10 |
-| Writing | 10 |
-| Learning | 10 |
-| Data | 10 |
-| Business | 10 |
-| Coding | 10 |
-| Research | 10 |
-| Career | 10 |
-| Creative | 10 |
-| Operations | 10 |
-| **Total** | **100** |
+- Unique name and version
+- Category and description
+- Installation instructions
+- Input and output definitions
+- Appropriate Agent Skill or MCP interface
+- Tests and usage examples
+- Security and permission documentation
 
-## Security and privacy
-
-- Local deterministic tools process the supplied payload in the local process.
-- The MCP server does not fetch remote URLs, execute shell commands, modify repositories or transmit user data by default.
-- Treat repository contents and documents as untrusted input.
-- Review outputs before using them in legal, medical, financial, employment or other high-impact decisions.
-- The personal planning tools are general organizational aids, not medical or financial advice.
-
-## Quality checks
-
-```bash
-python -m pip install pytest
-pytest
-```
+See `docs/` and `templates/` for development resources.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Please open an issue before proposing a new tool so the registry stays coherent and duplicate capabilities are avoided.
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Implement your plugin or improvement.
+4. Add tests and documentation.
+5. Submit a pull request.
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
+
+## Security
+
+AgentForge aims to use safe defaults, including restricted permissions and explicit user approval for consequential actions.
+
+Please report vulnerabilities responsibly using the instructions in [SECURITY.md](SECURITY.md).
+
+## Roadmap
+
+- [x] Initial plugin ecosystem
+- [x] 100-tool catalogue
+- [x] MCP server
+- [x] Agent Skills
+- [x] Marketplace frontend and backend
+- [x] Search and category discovery
+- [ ] User authentication
+- [ ] Community plugin submissions
+- [ ] Plugin ratings and reviews
+- [ ] Public marketplace deployment
+- [ ] Additional integrations
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Released under the MIT License. See [LICENSE](LICENSE).
+
+## Acknowledgements
+
+Built for the open-source AI developer community.
+
+**AgentForge — Build. Connect. Automate. Extend.**
