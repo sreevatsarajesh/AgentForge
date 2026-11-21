@@ -214,4 +214,8 @@ Released under the MIT License. See [LICENSE](LICENSE).
 
 Built for the open-source AI developer community.
 
+## m8ven
+
+[![M8ven Score](https://m8ven.ai/badge/mcp/sreevatsarajesh-agentforge-195quw?v=0bd7680324a2a029d91667ef40e17ad8)](https://m8ven.ai/mcp/sreevatsarajesh-agentforge-195quw?s=readme)
+
 **AgentForge — Build. Connect. Automate. Extend.**
